@@ -1,0 +1,20 @@
+FORMAT: 1A
+HOST: http://localhost:3001
+
+# User Metrics API
+
+
+## User Metrics [/api/v1/analytics/usermetics?name={name}&status={status}]
+
+### GET the User Data [GET]
+
+Get the User Data
+
++ Parameters
+    + name: `john` (string, optional) - user name
+    + status: `completed` (string, optional) - status
+
+
++ Response 200 (application/json)
+
+        [{"id":1085,"status":"ERROR","createdOn":1528897012000,"name":"quizzical_northcutt","description":"Aliquam etincidunt non eius porro non.","delta":0},{"id":1084,"status":"ERROR","createdOn":"2018-06-13T14:33:55.000Z","name":"friendly_neumann","description":"Quisquam porro amet numquam.","delta":0}]
